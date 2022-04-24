@@ -22,15 +22,43 @@ public class OperacionesMatematicas {
         System.out.print( "Introduzca el segundo número: " );
         num2 = teclado.nextInt();
  
-		suma=num1 + num2;
-		resta=num1-num2;
-		multiplicacion=num1*num2;
-		division= num1/num2;
+		suma = sumaNumeros(num1, num2);
+		resta = restaNumeros(num1, num2);
+		multiplicacion = multiplicaNumeros(num1, num2);
+		division = divideNumeros(num1, num2);
 		
+		resultados(num1, num2, suma, resta, multiplicacion, division);
+	}
+
+	public static void resultados(int num1, int num2, int suma, int resta, int multiplicacion, int division) {
 		System.out.println("La suma de " + num1 + " + " + num2 + " es: " + suma);
 		System.out.println("La resta de " + num1 + " - " + num2 + " es: " + resta);
 		System.out.println("El producto de " + num1 + " x " + num2 + " es: " + multiplicacion);
 		System.out.println("El cociente de " + num1 + " / " + num2 + " es: " + division);
+	}
+
+	public static int divideNumeros(int num1, int num2) {
+		int division;
+		division= num1/num2;
+		return division;
+	}
+
+	public static int multiplicaNumeros(int num1, int num2) {
+		int multiplicacion;
+		multiplicacion=num1*num2;
+		return multiplicacion;
+	}
+
+	public static int sumaNumeros(int num1, int num2) {
+		int suma;
+		suma = num1+num2;
+		return suma;
+	}
+
+	public static int restaNumeros(int num1, int num2) {
+		int resta;
+		resta=num1-num2;
+		return resta;
 	}
 
 }
