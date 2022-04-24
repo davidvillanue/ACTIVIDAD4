@@ -4,7 +4,13 @@ public class OperacionesMatematicas {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		/*introducir 2 números enteros positivos y a continuación realizar las 4 operaciones
+		 *básicas matemáticas (suma, resta, multiplicación y división) sin el uso de métodos 
+		 *para posteriormente visualizar sus resultados.
+		 *
+		 *autor: David Villanueva
+		 *version 1
+		 *fecha: 24/04/2022*/
 		
 		int num1, num2;
 		int suma, resta, multiplicacion, division;
